@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishil Shah</title>
     <link rel="stylesheet" href="index.css">
-    <!-- <iframe src="_header.html" frameborder="0"></iframe> -->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav id="nav">
-        <div class="menu"></div>
-        <div class="left">Nishil's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Nishil-Home</a></li>
-            <li><a href="/contact.html">Contact Me</a></li>
-            <li><a href="/about.html">About Me</a></li>
-            <li><a href="media/Nishil_Resume.pdf" download="">Resume</a></li>
-          </ul>
-        </div>
-      </nav>
+  <div class="container">
+
+    <div id="header"></div> 
     
-</body>
+    <div class="main">
+
+      <div class="first-section">
+        <div class="first-left">
+          <div class="nameP-1">NAS</div>
+          <div class="nameP-2">TIC</div>
+          <div class="nameP-3">EYE</div>
+        </div>
+
+        <div class="first-right">
+
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+
+    // Loading the Header part of the Website
+    $(function(){
+      $("#header").load("_header.html"); 
+    });
+  </script>
+
+  </body>
 </html>
