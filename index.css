@@ -23,6 +23,8 @@ body{
     display: none;
 }
 
+
+/* Header Page/Naigation Bar CSS */
 #header{
     height: 55px;
 }
@@ -53,15 +55,37 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(201 0 0);
+    color: black;
     font-weight: 900;
     transition-duration: 0.8s;
     font-size: 1.1rem;
 }
 
 nav ul li a:hover{
-    color: #adf700;
+    color: #63665b;
 }
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .left{
     font-family: 'Young Serif', serif;
@@ -87,12 +111,12 @@ nav ul li a:hover{
 
 .left:hover{
     /* color: #0e4745; */
-    
     font-size: 1.4rem;
     cursor: crosshair;
-    
 }
 
+
+/* First Sectio of the Website */
 .first-section{    
     display: flex;
     justify-content: space-around;
